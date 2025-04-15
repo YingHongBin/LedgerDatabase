@@ -32,7 +32,7 @@ LIST(APPEND BOOST_COMPONENT "thread")
 include(cmake/Dependencies.cmake)
 
 enable_testing()
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O2 -pthread -lssl -Wall -Wno-unused-function -fPIC")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O2 -pthread -lssl -Wall -Wno-unused-function -fPIC")
 
 MESSAGE(STATUS "${PROTOBUF_PROTOC_EXECUTABLE}")
 LIST(APPEND LEDGEBASE_INCLUDE_DIR "${CMAKE_SOURCE_DIR}")
